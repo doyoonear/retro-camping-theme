@@ -12,7 +12,7 @@
         "Themes"
     ],
     "repository": {
-        "type": "git",
+        "type": "github",
         "url": "https://github.com/doyoonear/retro-camping-theme.git"
     },
     "contributes": {
