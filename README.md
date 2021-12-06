@@ -1,7 +1,10 @@
+
+![RetroCamping](./img/retro-camping-icon.png)
+# Retro Color Theme
 ## About Retro Camping Theme
 * Retro Camping theme is a dark color theme for vscode.
 * Colors are inspired by retro camp badges.
-
+---
 ![RetroCamping](./img/retro-camping-1.png)
 ![RetroCamping](./img/retro-camping-2.png)
 ![RetroCamping](./img/retro-camping-3.png)
