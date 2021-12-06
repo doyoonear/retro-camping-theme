@@ -4,8 +4,11 @@
 		"parameter": "#7c96ac",
 		"method": "#7a8b89", // .log()
 		"string": "#D5ECE2",
-		"class": "#eb81eb",
+		"class": "#cc6ecc",
 		"interface": "#b7c352",
+		"interface.declaration": {
+			"foreground": "#c9b034",
+		},
 		"variable.defaultLibrary":{
 			"foreground": "#468abf",
 		},
@@ -30,7 +33,7 @@
 			"foreground": "#b7c352",
 		},
 		"function.defaultLibrary": "#468abf",
-		"type": "#008cff", 
+		"type": "#468abf", 
 	},
 	"tokenColors": [
 		{
@@ -42,7 +45,7 @@
 			"name": "Comment",
 			"scope": "comment",
 			"settings": {
-				"foreground": "#7C6F64"
+				"foreground": "#45524e"
 			}
 		},
 		{
@@ -88,7 +91,7 @@
 			"name": "Keyword",
 			"scope": "keyword",
 			"settings": {
-				"foreground": "#eb81eb"
+				"foreground": "#cc6ecc"
 			}
 		},
 		{
@@ -100,10 +103,10 @@
 			}
 		},
 		{
-			"name": "Storage type",
-			"scope": "storage.type",
+			"name": "Storage Class",
+			"scope": "storage.type.class",
 			"settings": {
-				"foreground": "#66999D"
+				"fontStyle": "italic"
 			}
 		},
 		{
@@ -207,7 +210,7 @@
 		// 여기서부터 내가 만든 룰 
 		// . ; 구두점
 		{
-			"scope": "meta.block.js",
+			"scope": "meta.block",
 				"settings": {
 					"foreground": "#c9b034"
 				}
@@ -215,12 +218,10 @@
 		// 기본색 - string 등
 		{
 			"scope": [
-				"string.quoted.single.js", 
-				"string.quoted.single.ts", 
-				"string.quoted.double.js", 
-				"string.quoted.double.json",
-				"string.template.js",
-				"variable.other.object.property.js",
+				"string.quoted.single", 
+				"string.quoted.double", 
+				"string.template",
+				"variable.other.object.property",
 			],
 			"settings": {
 				"foreground": "#c2c9bc",
@@ -229,11 +230,13 @@
 		// if, else
 		{
 			"scope": [
-				"keyword.control.conditional.js",
-				"variable.language.this.js",
-				"storage.type.function.arrow.js",
-				"keyword.operator.logical.js",
-				"keyword.operator.comparison.js",
+				"keyword.operator",
+				"keyword.operator.assignment",
+				"keyword.control.conditional",
+				"variable.language.this",
+				"storage.type.function.arrow",
+				"keyword.operator.logical",
+				"keyword.operator.comparison",
 			],
 			"settings": {
 				"foreground": "#DD6F48",
@@ -241,16 +244,16 @@
 		},
 		// return
 		{
-			"scope": "keyword.control.flow.js",
+			"scope": "keyword.control.flow",
 			"settings": {
-				"foreground": "#eb81eb",
+				"foreground": "#cc6ecc",
 				"fontStyle": "italic"
 			}
 		},
 		// try, catch, !==, &&, `${}`
 		{
 			"scope": [
-				"keyword.control.trycatch.js", 
+				"keyword.control.trycatch", 
 				"punctuation.definition.template-expression",
 			], 
 				"settings": {
@@ -260,10 +263,9 @@
 		// const, let, class, extends, static, require
 		{
 			"scope": [
-				"storage.type.js", 
-				"storage.modifier.js", 
-				"support.variable.property.js",
-				"support.function.js"
+				"storage.modifier", 
+				"support.variable.property",
+				"support.function"
 			], 
 			"settings": {
 				"foreground": "#468abf",
@@ -272,9 +274,8 @@
 		// 숫자, json 내부 숫자, json 내부 불리언, Object
 		{
 			"scope": [
-				"constant.numeric.decimal.js", 
-				"constant.numeric.json",
-				"constant.language.boolean.false.js",
+				"constant.numeric",
+				"constant.language.boolean",
 			],
 			"settings": {
 				"foreground": "#83A598",
@@ -284,7 +285,7 @@
 		{
 			"scope": [
 				"support.type.property-name.json", 
-				"support.type.object.module.js",
+				"support.type.object",
 			],
 			"settings": {
 				"foreground": "#9DA7D1",
@@ -293,21 +294,21 @@
 		},
 		{
 			"scope": [
-				"storage.type.function.js", 
-				"storage.modifier.async.js",
-				"keyword.operator.new.js"
+				"storage.type.function", 
+				"storage.modifier.async",
+				"keyword.operator.new"
 			],
 			"settings": {
-				"foreground": "#eb81eb",
+				"foreground": "#cc6ecc",
 				"fontStyle": "italic"
 			}
 		},
 		// constants, variable
 		{
 			"scope": [
-				"variable.other.constant.property.js", 
-				"variable.other.constant.object.js",
-				"constant.language.boolean.true.js",
+				"variable.other.constant.property", 
+				"variable.other.constant.object",
+				"constant.language.boolean.true",
 				"string.quoted.double.html"
 			],
 			"settings": {
@@ -324,7 +325,7 @@
 		},
 		{
 			"scope": [
-				"variable.other.property.js",
+				"variable.other.property",
 			],
 			"settings": {
 				"foreground": "#c995c9",
@@ -332,7 +333,7 @@
 		},
 		{
 			"scope": [
-				"variable.other.constant.js", 
+				"variable.other.constant", 
 			],
 			"settings": {
 				"foreground": "#83A598",
@@ -348,8 +349,8 @@
 		},
 		{
 			"scope": [
-				"entity.name.function.js",  // 얘가 되게 많음. 
-				"meta.object-literal.key.js",
+				"entity.name.function",  // 얘가 되게 많음. 
+				"meta.object-literal.key",
 			],
 			"settings": {
 				"foreground":"#b7c352",
@@ -358,7 +359,8 @@
 		// html tag 이름
 		{
 			"scope": [
-				"entity.name.tag.html"
+				"entity.name.tag.html",
+				"entity.name.tag.block.any.html"
 			],
 			"settings": {
 				"foreground": "#a44f4f",
@@ -380,6 +382,12 @@
 			],
 			"settings": {
 				"foreground": "#c995c9",
+			}
+		},
+		{
+			"scope": "meta.var.expr",
+			"settings": {
+				"foreground": "#468abf",
 			}
 		},
 		{
