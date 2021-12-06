@@ -42,7 +42,7 @@
 			"name": "Comment",
 			"scope": "comment",
 			"settings": {
-				"foreground": "#7C6F64"
+				"foreground": "#3a4141"
 			}
 		},
 		{
@@ -358,7 +358,8 @@
 		// html tag 이름
 		{
 			"scope": [
-				"entity.name.tag.html"
+				"entity.name.tag.html",
+				"entity.name.tag.block.any.html"
 			],
 			"settings": {
 				"foreground": "#a44f4f",
