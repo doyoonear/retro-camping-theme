@@ -1,0 +1,535 @@
+{
+	"semanticTokenColors": {
+		"comment": "#493C32",
+		"parameter": "#7c96ac",
+		"method": "#7a8b89", // .log()
+		"string": "#D5ECE2",
+		"class": "#eb81eb",
+		"interface": "#b7c352",
+		"variable.defaultLibrary":{
+			"foreground": "#468abf",
+		},
+		"variable": "#b7aa87",
+		"variable.readonly": {
+			"foreground": "#c9b034",
+		},
+		"variable.declaration.readonly": {
+			"foreground": "#c9b034",
+		},
+		"property" : "#b7c352", // { name }
+		"property.readonly": {
+			"foreground": "#c995c9"
+		},
+		"property.declaration": {
+			"foreground": "#7c96ac"
+		},
+		"function.declaration": {
+			"foreground": "#b7c352",
+		},
+		"function": {
+			"foreground": "#b7c352",
+		},
+		"function.defaultLibrary": "#468abf",
+		"type": "#008cff", 
+	},
+	"tokenColors": [
+		{
+			"settings": {
+				"foreground": "#FDF4C1"
+			}
+		},
+		{
+			"name": "Comment",
+			"scope": "comment",
+			"settings": {
+				"foreground": "#7C6F64"
+			}
+		},
+		{
+			"name": "String",
+			"scope": "string",
+			"settings": {
+				"foreground": "#528B8B"
+			}
+		},
+		{
+			"name": "Number",
+			"scope": "constant.numeric",
+			"settings": {
+				"foreground": "#D3869B"
+			}
+		},
+		{
+			"name": "Built-in constant",
+			"scope": "constant.language",
+			"settings": {
+				"foreground": "#BBAA97"
+			}
+		},
+		{
+			"name": "User-defined constant",
+			"scope": [
+				"constant.character",
+				"constant.other"
+			],
+			"settings": {
+				"foreground": "#BBAA97"
+			}
+		},
+		{
+			"name": "Variable",
+			"scope": "variable",
+			"settings": {
+				"fontStyle": "",
+				"foreground": "#83A598"
+			}
+		},
+		{
+			"name": "Keyword",
+			"scope": "keyword",
+			"settings": {
+				"foreground": "#eb81eb"
+			}
+		},
+		{
+			"name": "Storage",
+			"scope": "storage",
+			"settings": {
+				"fontStyle": "",
+				"foreground": "#468abf"
+			}
+		},
+		{
+			"name": "Storage type",
+			"scope": "storage.type",
+			"settings": {
+				"foreground": "#66999D"
+			}
+		},
+		{
+			"name": "Class name",
+			"scope": "entity.name.class",
+			"settings": {
+				"fontStyle": "underline",
+				"foreground": "#A89984"
+			}
+		},
+		{
+			"name": "Inherited class",
+			"scope": "entity.other.inherited-class",
+			"settings": {
+				"fontStyle": "italic underline",
+				"foreground": "#A89984"
+			}
+		},
+		{
+			"name": "Function name",
+			"scope": "entity.name.function",
+			"settings": {
+				"fontStyle": "",
+				"foreground": "#A89984"
+			}
+		},
+		{
+			"name": "Function argument",
+			"scope": "variable.parameter",
+			"settings": {
+				"fontStyle": "italic",
+				"foreground": "#83A598"
+			}
+		},
+		{
+			"name": "Tag name",
+			"scope": "entity.name.tag",
+			"settings": {
+				"fontStyle": "",
+				"foreground": "#A89984"
+			}
+		},
+		{
+			"name": "Tag attribute",
+			"scope": "entity.other.attribute-name",
+			"settings": {
+				"fontStyle": "",
+				"foreground": "#83A598"
+			}
+		},
+		{
+			"name": "Library function",
+			"scope": "support.function",
+			"settings": {
+				"fontStyle": "",
+				"foreground": "#468abf"
+			}
+		},
+		{
+			"name": "Library constant",
+			"scope": "support.constant",
+			"settings": {
+				"fontStyle": "",
+				"foreground": "#468abf"
+			}
+		},
+		{
+			"name": "Library class/type",
+			"scope": [
+				"support.type",
+				"support.class"
+			],
+			"settings": {
+				"fontStyle": "italic",
+				"foreground": "#468abf"
+			}
+		},
+		{
+			"name": "Library variable",
+			"scope": "support.other.variable",
+			"settings": {
+				"fontStyle": ""
+			}
+		},
+		{
+			"name": "Invalid",
+			"scope": "invalid",
+			"settings": {
+				"fontStyle": " bold",
+				"foreground": "#c2c9bc"
+			}
+		},
+		{
+			"name": "Invalid deprecated",
+			"scope": "invalid.deprecated",
+			"settings": {
+				"foreground": "#c2c9bc",
+				"fontStyle": " bold"
+			}
+		},
+		// 여기서부터 내가 만든 룰 
+		// . ; 구두점
+		{
+			"scope": "meta.block.js",
+				"settings": {
+					"foreground": "#c9b034"
+				}
+		},
+		// 기본색 - string 등
+		{
+			"scope": [
+				"string.quoted.single.js", 
+				"string.quoted.single.ts", 
+				"string.quoted.double.js", 
+				"string.quoted.double.json",
+				"string.template.js",
+				"variable.other.object.property.js",
+			],
+			"settings": {
+				"foreground": "#c2c9bc",
+			}
+		},
+		// if, else
+		{
+			"scope": [
+				"keyword.control.conditional.js",
+				"variable.language.this.js",
+				"storage.type.function.arrow.js",
+				"keyword.operator.logical.js",
+				"keyword.operator.comparison.js",
+			],
+			"settings": {
+				"foreground": "#DD6F48",
+			}
+		},
+		// return
+		{
+			"scope": "keyword.control.flow.js",
+			"settings": {
+				"foreground": "#eb81eb",
+				"fontStyle": "italic"
+			}
+		},
+		// try, catch, !==, &&, `${}`
+		{
+			"scope": [
+				"keyword.control.trycatch.js", 
+				"punctuation.definition.template-expression",
+			], 
+				"settings": {
+					"foreground": "#c995c9"
+				}
+		},
+		// const, let, class, extends, static, require
+		{
+			"scope": [
+				"storage.type.js", 
+				"storage.modifier.js", 
+				"support.variable.property.js",
+				"support.function.js"
+			], 
+			"settings": {
+				"foreground": "#468abf",
+			}
+		},
+		// 숫자, json 내부 숫자, json 내부 불리언, Object
+		{
+			"scope": [
+				"constant.numeric.decimal.js", 
+				"constant.numeric.json",
+				"constant.language.boolean.false.js",
+			],
+			"settings": {
+				"foreground": "#83A598",
+			}
+		},
+		// module exports 
+		{
+			"scope": [
+				"support.type.property-name.json", 
+				"support.type.object.module.js",
+			],
+			"settings": {
+				"foreground": "#9DA7D1",
+				"fontStyle": "italic"
+			}
+		},
+		{
+			"scope": [
+				"storage.type.function.js", 
+				"storage.modifier.async.js",
+				"keyword.operator.new.js"
+			],
+			"settings": {
+				"foreground": "#eb81eb",
+				"fontStyle": "italic"
+			}
+		},
+		// constants, variable
+		{
+			"scope": [
+				"variable.other.constant.property.js", 
+				"variable.other.constant.object.js",
+				"constant.language.boolean.true.js",
+				"string.quoted.double.html"
+			],
+			"settings": {
+				"foreground": "#9DA7D1",
+			}
+		},
+		{
+			"scope": [
+				"variable.other.object.js",
+			],
+			"settings": {
+				"foreground": "#7c96ac",
+			}
+		},
+		{
+			"scope": [
+				"variable.other.property.js",
+			],
+			"settings": {
+				"foreground": "#c995c9",
+			}
+		},
+		{
+			"scope": [
+				"variable.other.constant.js", 
+			],
+			"settings": {
+				"foreground": "#83A598",
+			}
+		},
+		{
+			"scope": [
+				"entity.name.function.member",
+			],
+			"settings": {
+				"foreground": "#9DA7D1",
+			}
+		},
+		{
+			"scope": [
+				"entity.name.function.js",  // 얘가 되게 많음. 
+				"meta.object-literal.key.js",
+			],
+			"settings": {
+				"foreground":"#b7c352",
+			}
+		},
+		// html tag 이름
+		{
+			"scope": [
+				"entity.name.tag.html"
+			],
+			"settings": {
+				"foreground": "#a44f4f",
+			}
+		},
+		// html tag 괄호
+		{
+			"scope": [
+				"punctuation.definition.tag",
+			],
+			"settings": {
+				"foreground": "#DD6F48",
+			}
+		},
+		{
+			"scope": [
+				"meta.tag.block.any.html", // 광역으로 html 내부 attribute, @, : 등을 묶음
+				"entity.other.attribute-name.html" // vue bind된 html attribute 
+			],
+			"settings": {
+				"foreground": "#c995c9",
+			}
+		},
+		{
+			"scope": [
+				"entity.other.attribute-name.html" // vue bind된 html attribute 
+			],
+			"settings": {
+				"foreground": "#b7c352",
+			}
+		},
+		// html 내부 글자
+		{
+			"scope": [
+				"text.html.derivative", 
+				"text.html.vue-html", 
+				"entity.other.attribute-name.id.html" // vue에서 bind되지 않은 일반 attribute
+			],
+			"settings": {
+				"foreground": "#c2c9bc",
+			}
+		}
+	],
+	"colors": {
+    "editor.background": "#1b1a1a",
+		"editor.foreground": "#e2e0d1",
+		"editorWhitespace.foreground": "#2c2926",
+		"editor.lineHighlightBackground": "#2B3C44",
+		"editor.selectionBackground": "#30434C",
+
+    "editor.foldBackground": "#373227",
+    "editorCursor.foreground": "#468abf",
+    "editor.hoverHighlightBackground": "#25251e",
+    "editor.inactiveSelectionBackground": "#1f2023",
+    "editorError.foreground": "#DD6F48",
+    "errorForeground": "#DD6F48",
+
+
+    "peekView.border": "#dbd6c3",
+    "peekViewTitleLabel.foreground": "#c995c9",
+    "peekViewEditor.matchHighlightBorder": "#468abf",
+    "editorGutter.addedBackground": "#468abf",
+    "editorGutter.deletedBackground": "#DD6F48",
+    "editorGutter.modifiedBackground": "#956d7f",
+    "editorOverviewRuler.deletedForeground": "#DD6F48",
+    "editorOverviewRuler.addedForeground": "#c995c9",
+    "editorOverviewRuler.errorForeground": "#DD6F48",
+    "editorOverviewRuler.modifiedForeground": "#6f817a",
+    "editorOverviewRuler.warningForeground": "#6f817a",
+    "editorOverviewRuler.infoForeground": "#dbd6c3",
+
+    "editorWarning.foreground": "#6f817a",
+    "editor.findMatchBackground": "#2f3f73",
+    "editor.findMatchHighlightBackground": "#2f3f73",
+    "editorSuggestWidget.background": "#201f21",
+
+    "focusBorder": "#9DA7D1",
+    "textLink.foreground": "#c995c9",
+    "textLink.activeForeground": "#c995c9",
+    "editorLink.activeForeground": "#c995c9",
+    "button.background": "#c995c9",
+
+    "panelTitle.inactiveForeground": "#9DA7D1",
+    "scrollbarSlider.activeBackground": "#2b302e",
+
+    // 맨 위 title 바
+    "titleBar.inactiveBackground": "#353a38",
+    "titleBar.activeBackground": "#2a263b",
+    "titleBar.inactiveForeground": "#353a38",
+
+    // 맨위 title 바 아래쪽 탭
+    "tab.activeForeground": "#dda1e2",
+    "tab.activeBackground": "#1a1716",
+    "tab.inactiveForeground": "#74747e",
+    "tab.inactiveBackground": "#2f2f37",
+    "tab.border": "#3a3d4a",
+    "tab.unfocusedInactiveBackground": "#282824",
+    "tab.unfocusedActiveBackground": "#282824",
+    "tab.unfocusedHoverBackground": "#353136",
+    "tab.hoverBackground": "#1f1e25",
+    "tab.unfocusedActiveForeground": "#9b759b",
+
+    // 왼쪽 구역 아이콘들
+    "activityBar.background": "#1a1716",
+    "activityBar.inactiveForeground": "#626985",
+    "activityBar.foreground": "#a8b6ed",
+    "activityBar.activeBorder": "#919abd",
+    "activityBar.border": "#3a3b35",
+    "activityBarBadge.background": "#c995c9",
+    "scrollbarSlider.background": "#353a38",
+
+    "sideBarTitle.foreground": "#c995c9",
+    "sideBar.background": "#222326",
+    "sideBar.dropBackground": "#222326",
+    "sideBarSectionHeader.background": "#1a1716",
+    "sideBar.foreground": "#c2c9bc",
+    "sideBar.border": "#1f2221",
+
+    // 왼쪽 쭉 내려오는 파일명, 파일 리스트
+    "list.highlightForeground": "#468abf",
+    "list.focusForeground": "#c995c9",
+    "list.focusBackground": "#1a1716",
+    "list.dropBackground": "#dddfd3",
+    "list.hoverBackground": "#313436",
+    "list.inactiveSelectionForeground": "#c9d2da",
+    "list.inactiveFocusBackground": "#242b25",
+    "list.activeSelectionForeground": "#468abf",
+    "list.inactiveSelectionBackground": "#2e3436",
+    "list.activeSelectionBackground": "#191c1f",
+    "list.filterMatchBackground": "#956d7f",
+    "list.warningForeground": "#c995c9",
+    "list.errorForeground": "#DD6F48",
+
+    // 리스트, 탭 색깔 git 상태에 따라서 바뀌는것
+    // U - untracked / M - modified
+    "gitDecoration.modifiedResourceForeground": "#a97ca3",
+    "gitDecoration.addedResourceForeground": "#468abf",
+    "gitDecoration.conflictingResourceForeground": "#DD6F48",
+    "gitDecoration.untrackedResourceForeground": "#968794",
+    
+    // 에디터 맨 아래쪽 상태 표시 - statusBar 
+    "statusBar.background": "#626985",
+    "statusBarItem.activeBackground": "#468abf",
+
+    // command + , 눌렀을때 나오는 setting 창. input 등 
+    "settings.checkboxBackground": "#468abf",
+    "settings.textInputBackground": "#3f4353",
+    "settings.focusedRowBackground": "#614f66",
+    "settings.numberInputBackground": "#3f4353",
+    "settings.modifiedItemIndicator": "#c995c9",
+    "settings.dropdownBorder": "#dca7dc",
+    "settings.dropdownBackground": "#373638",
+    
+    "progressBar.background": "#25252b",
+    "menu.background": "#25252b",
+    "badge.background": "#25252b",
+    "input.background": "#34343d",
+    "panel.background": "#25252b",
+    "minimap.background": "#25252b",
+    "checkbox.background": "#25252b",
+    "dropdown.background": "#25252b",
+    "editorInfo.background": "#25252b",
+    "editorPane.background": "#25252b",
+    "panelSection.dropBackground": "#25252b",
+    "dropdown.listBackground": "#25252b",
+    "editorWidget.background": "#201f21",
+    "editorGroupHeader.tabsBackground": "#201f21",
+    "peekViewTitle.background": "#201f21",
+    "editor.snippetTabstopHighlightBackground": "#201f21",
+    "editorGroupHeader.noTabsBackground": "#201f21",
+    "editorSuggestWidget.selectedBackground": "#9DA7D1"
+  },
+	"name": "Retro Camping"
+}

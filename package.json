@@ -1,0 +1,21 @@
+{
+    "name": "retrocamping",
+    "displayName": "RetroCamping",
+    "description": "Dark Color Theme - Vintage colors picked up from Retro camp badges.",
+    "version": "0.0.1",
+    "engines": {
+        "vscode": "^1.62.0"
+    },
+    "categories": [
+        "Themes"
+    ],
+    "contributes": {
+        "themes": [
+            {
+                "label": "Retro Camping",
+                "uiTheme": "vs-dark",
+                "path": "./themes/Retro Camping-color-theme.json"
+            }
+        ]
+    }
+}
