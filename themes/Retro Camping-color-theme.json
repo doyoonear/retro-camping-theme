@@ -6,6 +6,9 @@
 		"string": "#D5ECE2",
 		"class": "#eb81eb",
 		"interface": "#b7c352",
+		"interface.declaration": {
+			"foreground": "#c9b034",
+		},
 		"variable.defaultLibrary":{
 			"foreground": "#468abf",
 		},
@@ -30,7 +33,7 @@
 			"foreground": "#b7c352",
 		},
 		"function.defaultLibrary": "#468abf",
-		"type": "#008cff", 
+		"type": "#3495f0", 
 	},
 	"tokenColors": [
 		{
@@ -103,7 +106,7 @@
 			"name": "Storage type",
 			"scope": "storage.type",
 			"settings": {
-				"foreground": "#66999D"
+				"foreground": "#83A598"
 			}
 		},
 		{
@@ -241,7 +244,7 @@
 		},
 		// return
 		{
-			"scope": "keyword.control.flow.js",
+			"scope": "keyword.control.flow",
 			"settings": {
 				"foreground": "#eb81eb",
 				"fontStyle": "italic"
@@ -250,7 +253,7 @@
 		// try, catch, !==, &&, `${}`
 		{
 			"scope": [
-				"keyword.control.trycatch.js", 
+				"keyword.control.trycatch", 
 				"punctuation.definition.template-expression",
 			], 
 				"settings": {
@@ -260,10 +263,10 @@
 		// const, let, class, extends, static, require
 		{
 			"scope": [
-				"storage.type.js", 
-				"storage.modifier.js", 
-				"support.variable.property.js",
-				"support.function.js"
+				"storage.type", 
+				"storage.modifier", 
+				"support.variable.property",
+				"support.function"
 			], 
 			"settings": {
 				"foreground": "#468abf",
