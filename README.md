@@ -1,13 +1,10 @@
-# README
-## This is the README for your extension "retrocamping"
-You can author your README using Visual Studio Code.  Here are some useful editor keyboard shortcuts:
+## About Retro Camping Theme
+* Retro Camping theme is a color theme for vscode that Colors picked from retro camp badges.
 
-* Split the editor (`Cmd+\` on macOS or `Ctrl+\` on Windows and Linux)
-* Toggle preview (`Shift+CMD+V` on macOS or `Shift+Ctrl+V` on Windows and Linux)
-* Press `Ctrl+Space` (Windows, Linux) or `Cmd+Space` (macOS) to see a list of Markdown snippets
+* Supports Vue.js, React.
+* Typescript support updates will be soon.
 
-### For more information
-* [Visual Studio Code's Markdown Support](http://code.visualstudio.com/docs/languages/markdown)
-* [Markdown Syntax Reference](https://help.github.com/articles/markdown-basics/)
-
-**Enjoy!**
+## How to Use
+Open Command Palette (Cmmd+Shift+P), 
+- Preferences: Color Theme
+- Select 'Retro Camping' theme.

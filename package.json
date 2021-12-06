@@ -1,6 +1,7 @@
 {
     "name": "retrocamping",
-    "displayName": "RetroCamping",
+    "publisher": "DoyoonLee",
+    "displayName": "Retro Camping",
     "description": "Dark Color Theme - Vintage colors picked up from Retro camp badges.",
     "version": "0.0.1",
     "engines": {
@@ -9,6 +10,10 @@
     "categories": [
         "Themes"
     ],
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/doyoonear/retro-camping-theme.git"
+    },
     "contributes": {
         "themes": [
             {
@@ -17,5 +22,5 @@
                 "path": "./themes/Retro Camping-color-theme.json"
             }
         ]
-    }
+    },
 }
