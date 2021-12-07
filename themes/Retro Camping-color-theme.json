@@ -5,7 +5,7 @@
 		"method": "#7a8b89", // .log()
 		"string": "#D5ECE2",
 		"class": "#cc6ecc",
-		"interface": "#b7c352",
+		"interface": "#468abf",
 		"interface.declaration": {
 			"foreground": "#c9b034",
 		},
