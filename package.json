@@ -1,9 +1,9 @@
 {
     "name": "retrocamping",
     "publisher": "DoyoonLee",
-    "displayName": "Retro Camping",
+    "displayName": "Retro Camping - Retro Color Theme",
     "description": "Dark Color Theme - Vintage colors picked from Retro camp badges.",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "icon": "img/retro-camping-icon.png",
     "engines": {
         "vscode": "^1.62.0"
