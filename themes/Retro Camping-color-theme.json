@@ -1,11 +1,11 @@
 {
+	"name": "Retro Camping",
 	"semanticTokenColors": {
-		"comment": "#493C32",
 		"parameter": "#7c96ac",
 		"method": "#7a8b89", // .log()
 		"string": "#D5ECE2",
-		"class": "#cc6ecc",
-		"interface": "#468abf",
+		"class": "#eb81eb",
+		"interface": "#b7c352",
 		"interface.declaration": {
 			"foreground": "#c9b034",
 		},
@@ -45,7 +45,7 @@
 			"name": "Comment",
 			"scope": "comment",
 			"settings": {
-				"foreground": "#45524e"
+				"foreground": "#504b2f"
 			}
 		},
 		{
@@ -56,17 +56,10 @@
 			}
 		},
 		{
-			"name": "Number",
-			"scope": "constant.numeric",
-			"settings": {
-				"foreground": "#D3869B"
-			}
-		},
-		{
 			"name": "Built-in constant",
 			"scope": "constant.language",
 			"settings": {
-				"foreground": "#BBAA97"
+				"foreground": "#468abf"
 			}
 		},
 		{
@@ -88,13 +81,6 @@
 			}
 		},
 		{
-			"name": "Keyword",
-			"scope": "keyword",
-			"settings": {
-				"foreground": "#cc6ecc"
-			}
-		},
-		{
 			"name": "Storage",
 			"scope": "storage",
 			"settings": {
@@ -107,30 +93,6 @@
 			"scope": "storage.type.class",
 			"settings": {
 				"fontStyle": "italic"
-			}
-		},
-		{
-			"name": "Class name",
-			"scope": "entity.name.class",
-			"settings": {
-				"fontStyle": "underline",
-				"foreground": "#A89984"
-			}
-		},
-		{
-			"name": "Inherited class",
-			"scope": "entity.other.inherited-class",
-			"settings": {
-				"fontStyle": "italic underline",
-				"foreground": "#A89984"
-			}
-		},
-		{
-			"name": "Function name",
-			"scope": "entity.name.function",
-			"settings": {
-				"fontStyle": "",
-				"foreground": "#A89984"
 			}
 		},
 		{
@@ -195,19 +157,10 @@
 			"name": "Invalid",
 			"scope": "invalid",
 			"settings": {
-				"fontStyle": " bold",
+				"fontStyle": "bold",
 				"foreground": "#c2c9bc"
 			}
 		},
-		{
-			"name": "Invalid deprecated",
-			"scope": "invalid.deprecated",
-			"settings": {
-				"foreground": "#c2c9bc",
-				"fontStyle": " bold"
-			}
-		},
-		// 여기서부터 내가 만든 룰 
 		// . ; 구두점
 		{
 			"scope": "meta.block",
@@ -215,7 +168,6 @@
 					"foreground": "#c9b034"
 				}
 		},
-		// 기본색 - string 등
 		{
 			"scope": [
 				"string.quoted.single", 
@@ -227,30 +179,31 @@
 				"foreground": "#c2c9bc",
 			}
 		},
-		// if, else
 		{
 			"scope": [
 				"keyword.operator",
-				"keyword.operator.assignment",
-				"keyword.control.conditional",
 				"variable.language.this",
 				"storage.type.function.arrow",
-				"keyword.operator.logical",
-				"keyword.operator.comparison",
 			],
 			"settings": {
 				"foreground": "#DD6F48",
 			}
 		},
-		// return
 		{
-			"scope": "keyword.control.flow",
+			"name": "Keyword",
+			"scope": "keyword",
 			"settings": {
-				"foreground": "#cc6ecc",
-				"fontStyle": "italic"
+				"foreground": "#eb81eb"
 			}
 		},
-		// try, catch, !==, &&, `${}`
+			// return
+			{
+				"scope": "keyword.control.flow",
+				"settings": {
+					"fontStyle": "italic"
+				}
+			},
+		// try, catch, `${}`
 		{
 			"scope": [
 				"keyword.control.trycatch", 
@@ -299,7 +252,7 @@
 				"keyword.operator.new"
 			],
 			"settings": {
-				"foreground": "#cc6ecc",
+				"foreground": "#eb81eb",
 				"fontStyle": "italic"
 			}
 		},
@@ -415,10 +368,10 @@
 		"editor.foreground": "#e2e0d1",
 		"editorWhitespace.foreground": "#2c2926",
 		"editor.lineHighlightBackground": "#2B3C44",
-		"editor.selectionBackground": "#30434C",
+		"editor.selectionBackground": "#242d31",
 
     "editor.foldBackground": "#373227",
-    "editorCursor.foreground": "#468abf",
+    "editorCursor.foreground": "#66D9EF",
     "editor.hoverHighlightBackground": "#25251e",
     "editor.inactiveSelectionBackground": "#1f2023",
     "editorError.foreground": "#DD6F48",
@@ -436,12 +389,17 @@
     "editorOverviewRuler.errorForeground": "#DD6F48",
     "editorOverviewRuler.modifiedForeground": "#6f817a",
     "editorOverviewRuler.warningForeground": "#6f817a",
+		"editorOverviewRuler.background": "#1b1c22",
     "editorOverviewRuler.infoForeground": "#dbd6c3",
-
-    "editorWarning.foreground": "#6f817a",
     "editor.findMatchBackground": "#2f3f73",
     "editor.findMatchHighlightBackground": "#2f3f73",
     "editorSuggestWidget.background": "#201f21",
+
+		// 변경사항 diff 에디터 컬러. diagnoalFill 빗금 표시
+		"diffEditor.diagonalFill": "#4d474e",
+		"diffEditor.border": "#6b658d",
+		"diffEditor.removedTextBackground": "#57434caa",
+		"diffEditor.insertedTextBackground": "#27243caa",
 
     "focusBorder": "#9DA7D1",
     "textLink.foreground": "#c995c9",
@@ -515,6 +473,7 @@
     "settings.checkboxBackground": "#468abf",
     "settings.textInputBackground": "#3f4353",
     "settings.focusedRowBackground": "#614f66",
+		"settings.rowHoverBackground": "#2f3f73",
     "settings.numberInputBackground": "#3f4353",
     "settings.modifiedItemIndicator": "#c995c9",
     "settings.dropdownBorder": "#dca7dc",
@@ -539,5 +498,4 @@
     "editorGroupHeader.noTabsBackground": "#201f21",
     "editorSuggestWidget.selectedBackground": "#9DA7D1"
   },
-	"name": "Retro Camping"
 }
