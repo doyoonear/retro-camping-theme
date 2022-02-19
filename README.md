@@ -2,6 +2,8 @@
 <img src="./img/retro-camping-icon.png" width=25%/>
 
 # Retro Color Theme
+* Theme designed and made by Doyoon Lee
+
 ## About Retro Camping Theme
 * Retro Camping theme is a dark color theme for vscode.
 * Colors are inspired by retro camp badges.
